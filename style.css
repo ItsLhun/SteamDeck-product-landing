@@ -1,48 +1,65 @@
+:root {
+  --main-bg-color: white;
+  --main-grey: rgb(69, 69, 77);
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-html,body {
-    font-size: 16px;
+
+html,
+body {
+  font-size: 16px;
   background-color: rgb(24, 24, 24);
   width: 100%;
   font-family: sans-serif;
 }
 
-section, header{
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+section,
+header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-header{
-    background-color: white;
-    height: 8rem;
+header {
+  background-color: white;
+  height: 6rem;
 }
-header ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-header li{
-    list-style: none;
-    display: block;
-    padding: 1rem 2rem;
-    background-color: rgb(69, 69, 77); 
+header div > .nav-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--main-grey);
+  text-decoration: none;
+  color: white;
 }
-header li:hover{
-    background-color: rgba(52, 71, 124, 0.89);
+header a:hover {
+  background-color: rgba(52, 71, 124, 0.89);
 }
-header li > a {
-    text-decoration: none;
-    color: white;
-}
-nav {
-    width: 70%;
-    max-width: 1200px;
-    margin: 1rem auto;
-    background-color: rgb(69, 69, 77); 
 
+nav {
+  width: 100%;
+  background-color: rgb(69, 69, 77);
+  position: sticky;
+  color: white;
 }
-#video{
-    max-width: 100%;
+#video {
+  max-width: 100%;
+}
+#options {
+  background: linear-gradient(
+    137.42deg,
+    #1a75ff 0%,
+    #6a5df8 50.43%,
+    #c957e6 100%
+  );
+  color: white;
+  padding: 3% 5%;
+  min-height: 2000px;
 }
